@@ -81,7 +81,7 @@ export const tours: Tour[] = [
     rating: 4.6,
     reviewCount: 22519,
     imageAlt: 'NYC: Edge Immersive Observation Deck Ticket - New York',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/9c00e7681463617c96947d451511f4252d62ba1f5eaa8905240ad22d0b0d0cd2.jpeg/145.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/9c00e7681463617c96947d451511f4252d62ba1f5eaa8905240ad22d0b0d0cd2.jpg/145.jpg',
     categories: ['skip-the-line-tickets'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -114,7 +114,7 @@ export const tours: Tour[] = [
     rating: 4.6,
     reviewCount: 21145,
     imageAlt: 'New York City: Top of the Rock Observation Deck Ticket - New York',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/137bde37ec9599259a923a6a8fc663294520125b84b3633e0d8701d1e6e46481.jpeg/145.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/137bde37ec9599259a923a6a8fc663294520125b84b3633e0d8701d1e6e46481.jpg/145.jpg',
     categories: ['skip-the-line-tickets'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -213,7 +213,7 @@ export const tours: Tour[] = [
     rating: 4.7,
     reviewCount: 11270,
     imageAlt: 'New York CityPASS®: Save up to 42% at 5 Top Attractions - New York',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/6453d23f54c4c.jpeg/145.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/6453d23f54c4c.png/145.jpg',
     categories: ['top-attractions'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -246,7 +246,7 @@ export const tours: Tour[] = [
     rating: 4.6,
     reviewCount: 8646,
     imageAlt: 'NYC Sunset & Harbor Lights Cruise with Statue of Liberty - New York',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/eec21e827ba889c11239ba651524c81e805780bcd6f9662937bc985d147f5083.jpeg/145.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/eec21e827ba889c11239ba651524c81e805780bcd6f9662937bc985d147f5083.jpg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -279,7 +279,7 @@ export const tours: Tour[] = [
     rating: 4.8,
     reviewCount: 7199,
     imageAlt: 'NYC: Manhattan Sightseeing Helicopter Tour - New York',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/4b99fec5755d4928f4ced9f4a6e1d5daf35e73875fbd7470c05f921ca74d071d.jpeg/145.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/4b99fec5755d4928f4ced9f4a6e1d5daf35e73875fbd7470c05f921ca74d071d.png/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -312,7 +312,7 @@ export const tours: Tour[] = [
     rating: 4.7,
     reviewCount: 6730,
     imageAlt: 'New York City: The FRIENDS™ Experience Entry Ticket - New York',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/f6c8e47586249dec852dce02871ea3ac30a79b361be5865523efb2c4351a6056.jpeg/145.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/f6c8e47586249dec852dce02871ea3ac30a79b361be5865523efb2c4351a6056.jpg/145.jpg',
     categories: ['skip-the-line-tickets'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -510,7 +510,7 @@ export const tours: Tour[] = [
     rating: 4.6,
     reviewCount: 2305,
     imageAlt: 'New York City: Harlem Gospel Live Music Concert - New York',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/088cac5043775202e441a457e477fb880fa4f7c6fe61198d1e142d862790467c.jpeg/145.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/088cac5043775202e441a457e477fb880fa4f7c6fe61198d1e142d862790467c.jpg/145.jpg',
     categories: ['top-attractions'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -543,7 +543,7 @@ export const tours: Tour[] = [
     rating: 4.8,
     reviewCount: 2268,
     imageAlt: 'NYC: MJ the Michael Jackson Musical on Broadway - New York',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/b650a8a88059b8ca79a5ed1a93c83587200b2cde6821c3dd75d8889ac6cd2098.jpeg/145.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/b650a8a88059b8ca79a5ed1a93c83587200b2cde6821c3dd75d8889ac6cd2098.png/145.jpg',
     categories: ['top-attractions'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -642,7 +642,7 @@ export const tours: Tour[] = [
     rating: 4.3,
     reviewCount: 1484,
     imageAlt: 'New York City: Gourmet Dinner Cruise with Live Music - New York',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/5b91ce36f5a6170c9243f1b41370b2cd307d24998176674d9f26280e90cd323b.jpeg/145.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/5b91ce36f5a6170c9243f1b41370b2cd307d24998176674d9f26280e90cd323b.jpg/145.jpg',
     categories: ['food-wine-nightlife'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -675,7 +675,7 @@ export const tours: Tour[] = [
     rating: 4.5,
     reviewCount: 1403,
     imageAlt: 'NY Contrasts: Brooklyn, Bronx, Harlem, Queens & Coney Island - New York',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/be2e01816648e5053af40e601a544bfc6071ed14f9fb87ec0220c38b5a0ac918.jpeg/145.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/be2e01816648e5053af40e601a544bfc6071ed14f9fb87ec0220c38b5a0ac918.jpg/145.jpg',
     categories: ['top-attractions'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -741,7 +741,7 @@ export const tours: Tour[] = [
     rating: 4.4,
     reviewCount: 804,
     imageAlt: 'New York: Harlem Tour and Sunday Gospel Concert - New York',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/c5d59be5887d9e8b8e432cf95c6e3ad406d3128b8ea7aff7d46ff493e61dd727.jpeg/145.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/c5d59be5887d9e8b8e432cf95c6e3ad406d3128b8ea7aff7d46ff493e61dd727.jpg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -774,7 +774,7 @@ export const tours: Tour[] = [
     rating: 4.7,
     reviewCount: 753,
     imageAlt: 'NYC: Chinatown and Little Italy Food Tour - New York',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/7c0d1ec28fea3a1a5b5895c1b835a81b0e123abf07ad82cb5c57c73044ac62d0.jpeg/145.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/7c0d1ec28fea3a1a5b5895c1b835a81b0e123abf07ad82cb5c57c73044ac62d0.jpg/145.jpg',
     categories: ['food-wine-nightlife'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -807,7 +807,7 @@ export const tours: Tour[] = [
     rating: 4.8,
     reviewCount: 591,
     imageAlt: 'NYC: Brooklyn Graffiti Workshop with Local Artist - New York',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/9a4fd86b48510f0c9ecb2a51b0c4f2506cf7d0deba5b3006973f4b2b3a612e43.jpeg/145.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/9a4fd86b48510f0c9ecb2a51b0c4f2506cf7d0deba5b3006973f4b2b3a612e43.png/145.jpg',
     categories: ['top-attractions'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -840,7 +840,7 @@ export const tours: Tour[] = [
     rating: 4.8,
     reviewCount: 553,
     imageAlt: 'NYC: Speakeasy Drinks and Prohibition History Tour - New York',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/34400dcf5570c1942d42f6c9dc318f8538492db528a82351d6a73360386e6771.jpeg/145.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/34400dcf5570c1942d42f6c9dc318f8538492db528a82351d6a73360386e6771.jpg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
