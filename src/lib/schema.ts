@@ -1,4 +1,4 @@
-import { Tour, Category, Guide, FAQ } from './types';
+import { Tour, Category, Guide, BlogPost, FAQ } from './types';
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from './constants';
 
 export function websiteSchema() {
@@ -156,6 +156,29 @@ export function articleSchema(guide: Guide) {
     url: `${SITE_URL}/guides/${guide.slug}`,
     datePublished: guide.publishedDate,
     dateModified: guide.updatedDate,
+    author: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+  };
+}
+
+export function blogPostSchema(post: BlogPost) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.metaDescription,
+    url: `${SITE_URL}/blog/${post.slug}`,
+    image: post.heroImage,
+    datePublished: post.publishedDate,
+    dateModified: post.updatedDate,
     author: {
       '@type': 'Organization',
       name: SITE_NAME,

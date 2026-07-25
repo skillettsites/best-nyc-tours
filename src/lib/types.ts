@@ -53,6 +53,22 @@ export interface GuideSection {
   content: string;
 }
 
+export interface BlogPost {
+  slug: string;
+  title: string;
+  metaTitle: string;
+  metaDescription: string;
+  excerpt: string;
+  heroImage: string;
+  heroImageAlt: string;
+  content: string;
+  faqs: FAQ[];
+  relatedTourSlugs: string[];
+  relatedBlogSlugs: string[];
+  publishedDate: string;
+  updatedDate: string;
+}
+
 export interface FAQ {
   question: string;
   answer: string;
