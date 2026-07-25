@@ -2,6 +2,7 @@ import LocalPrice from '@/components/LocalPrice';
 import Link from 'next/link';
 import TrackedGYGLink from '@/components/TrackedGYGLink';
 import { tours } from '@/data/tours';
+import { blogPosts } from '@/data/blog-posts';
 import { categories } from '@/data/categories';
 import { SITE_CITY, GYG_PARTNER_ID, GYG_LOCATION_ID, GYG_CITY_URL } from '@/lib/constants';
 import { trustStats } from '@/lib/trust';
@@ -44,6 +45,18 @@ const benefits = [
     desc: 'Most tours cancellable up to 24h before. Plans change, we get it.',
   },
 ];
+
+const decisionGuideSlugs = [
+  'how-to-skip-the-line-at-nyc-attractions',
+  'best-nyc-observation-deck-top-of-the-rock-vs-edge-vs-summit',
+  'statue-of-liberty-ferry-vs-cruise-tour',
+  'is-the-new-york-citypass-worth-it',
+  'is-a-9-11-memorial-and-museum-tour-worth-it',
+  'is-a-manhattan-helicopter-tour-worth-it',
+];
+const decisionGuides = decisionGuideSlugs
+  .map((slug) => blogPosts.find((p) => p.slug === slug))
+  .filter((p): p is NonNullable<typeof p> => p !== undefined);
 
 export default function HomePage() {
   return (
@@ -120,6 +133,39 @@ export default function HomePage() {
                 <CategoryPill key={cat.slug} href={`/category/${cat.slug}`} label={`${cat.icon} ${cat.title}`} count={cat.tourSlugs.length} />
               ))}
             </div>
+          </div>
+        </section>
+      )}
+
+      {/* Decision guides */}
+      {decisionGuides.length > 0 && (
+        <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+          <SectionHeader
+            eyebrow="Trip planning"
+            title={`Is it worth it? ${SITE_CITY} trip-planning guides`}
+            subtitle="Honest, up-to-date answers to the questions every New York visitor asks before they book."
+            action={{ label: 'All guides', href: '/blog' }}
+          />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+            {decisionGuides.map((post, i) => (
+              <RevealOnScroll key={post.slug} delay={(i % 3) * 0.08}>
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="group flex h-full flex-col rounded-card-lg border border-border bg-surface p-6 shadow-card transition-all hover:border-primary hover:-translate-y-0.5"
+                >
+                  <h3 className="font-semibold text-on-surface leading-snug group-hover:text-primary transition-colors">
+                    {post.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-on-surface-2 leading-relaxed line-clamp-3">
+                    {post.excerpt}
+                  </p>
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
+                    Read the guide
+                    <svg className="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+                  </span>
+                </Link>
+              </RevealOnScroll>
+            ))}
           </div>
         </section>
       )}

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { tours, getTourBySlug, getRelatedTours } from '@/data/tours';
 import { categories } from '@/data/categories';
 import { guides } from '@/data/guides';
+import { blogPosts } from '@/data/blog-posts';
 import { tourSchema, touristTripSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import { SITE_URL } from '@/lib/constants';
 import { TOP_CONVERTER_BY_DESTINATION } from '@/lib/trust';
@@ -33,6 +34,22 @@ const categoryGuideMap: Record<string, string[]> = {
 };
 
 const REDIRECTED = new Set<string>([]);
+
+// Decision-guide blog posts surfaced on tour pages. Keyword-matched against the
+// tour, then topped up with a default set so every tour shows three guides.
+const DECISION_GUIDE_KEYWORDS: { match: RegExp; slugs: string[] }[] = [
+  { match: /statue|liberty|ellis|ferry|cruise|harbor|harbour|circle line/i, slugs: ['statue-of-liberty-ferry-vs-cruise-tour', 'best-statue-of-liberty-sunset-cruise-which-to-book'] },
+  { match: /observation|edge|summit|vanderbilt|top of the rock|rockefeller|view|skyline/i, slugs: ['best-nyc-observation-deck-top-of-the-rock-vs-edge-vs-summit'] },
+  { match: /helicopter/i, slugs: ['is-a-manhattan-helicopter-tour-worth-it'] },
+  { match: /9\/?11|memorial|world trade/i, slugs: ['is-a-9-11-memorial-and-museum-tour-worth-it'] },
+  { match: /hop-on|hop on|sightseeing bus|open-top|open top/i, slugs: ['is-a-nyc-hop-on-hop-off-bus-worth-it'] },
+  { match: /citypass|city pass/i, slugs: ['is-the-new-york-citypass-worth-it'] },
+];
+const DEFAULT_DECISION_GUIDES = [
+  'how-to-skip-the-line-at-nyc-attractions',
+  'best-nyc-observation-deck-top-of-the-rock-vs-edge-vs-summit',
+  'is-the-new-york-citypass-worth-it',
+];
 
 export function generateStaticParams() {
   return tours.filter((t) => !REDIRECTED.has(t.slug)).map((tour) => ({ slug: tour.slug }));
@@ -323,6 +340,39 @@ export default async function TourPage({ params }: { params: Params }) {
                     <Link href={`/guides/${guide.slug}`} className="block group">
                       <span className="text-primary font-medium group-hover:underline">{guide.title}</span>
                       <p className="text-sm text-on-surface-2 mt-0.5">{guide.excerpt}</p>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          );
+        })()}
+
+        {/* Decision guides */}
+        {(() => {
+          const haystack = `${tour.slug} ${tour.title} ${tour.categories.join(' ')}`;
+          const slugOrder: string[] = [];
+          DECISION_GUIDE_KEYWORDS.forEach(({ match, slugs }) => {
+            if (match.test(haystack)) slugs.forEach((s) => slugOrder.push(s));
+          });
+          DEFAULT_DECISION_GUIDES.forEach((s) => slugOrder.push(s));
+          const seen = new Set<string>();
+          const decisionGuides = slugOrder
+            .filter((s) => (seen.has(s) ? false : (seen.add(s), true)))
+            .map((s) => blogPosts.find((p) => p.slug === s))
+            .filter((p): p is NonNullable<typeof p> => p !== undefined)
+            .slice(0, 3);
+          if (decisionGuides.length === 0) return null;
+
+          return (
+            <section className="mt-16 rounded-card-lg bg-surface-muted p-6 sm:p-8">
+              <h2 className="text-xl font-semibold text-on-surface mb-4">Related guides: is it worth it?</h2>
+              <ul className="space-y-3">
+                {decisionGuides.map((post) => (
+                  <li key={post.slug}>
+                    <Link href={`/blog/${post.slug}`} className="block group">
+                      <span className="text-primary font-medium group-hover:underline">{post.title}</span>
+                      <p className="text-sm text-on-surface-2 mt-0.5">{post.excerpt}</p>
                     </Link>
                   </li>
                 ))}

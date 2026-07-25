@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Best NYC Observation Deck 2026: Top of the Rock vs Edge vs SUMMIT',
     metaDescription: 'Top of the Rock, Edge, or SUMMIT One Vanderbilt? An honest 2026 comparison of the three best New York observation decks by view, price, crowds, and which to book.',
     excerpt: 'Three decks, three very different experiences. Here is which New York observation deck is worth your money, and which view actually beats the rest.',
-    heroImage: 'https://cdn.getyourguide.com/img/tour/137bde37ec9599259a923a6a8fc663294520125b84b3633e0d8701d1e6e46481.jpg/145.jpg',
+    heroImage: 'https://cdn.getyourguide.com/img/tour/137bde37ec9599259a923a6a8fc663294520125b84b3633e0d8701d1e6e46481.jpg/99.jpg',
     heroImageAlt: 'Top of the Rock observation deck view over the Manhattan skyline',
     content: `<p>New York now has more high-altitude viewing platforms than any first-time visitor can reasonably fit into one trip. The three that matter most are Top of the Rock at Rockefeller Center, Edge at Hudson Yards, and SUMMIT One Vanderbilt beside Grand Central. They are all excellent, they all cost roughly the same, and they are not interchangeable. Choosing well comes down to what you actually want to look at and how you want to feel while doing it.</p>
 
@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Statue of Liberty Ferry vs Cruise: Which to Book in 2026',
     metaDescription: 'Should you take the official Statue of Liberty ferry, a guided tour with ferry, or a sightseeing cruise that does not land? An honest 2026 comparison with real prices.',
     excerpt: 'Only one Statue of Liberty ticket actually lands you on the island. Here is the difference between the official ferry, a guided tour, and a cruise, and which suits your trip.',
-    heroImage: 'https://cdn.getyourguide.com/img/tour/5f7b651435b28.jpeg/145.jpg',
+    heroImage: 'https://cdn.getyourguide.com/img/tour/5f7b651435b28.jpeg/99.jpg',
     heroImageAlt: 'Statue of Liberty seen from a Statue City Cruises ferry in New York Harbor',
     content: `<p>The single most common Statue of Liberty mistake is buying the wrong kind of ticket. Some options land you on Liberty Island and Ellis Island so you can walk right up to the base of the statue. Others sail past for photos but never dock. Both are valid ways to see Lady Liberty, but they are very different days out, and travellers who book the wrong one are often disappointed. Here is how to get it right.</p>
 
@@ -113,7 +113,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Best Statue of Liberty Sunset Cruise 2026: Which to Book',
     metaDescription: 'The two best Statue of Liberty sunset cruises in New York compared for 2026: the South Street Seaport sunset cruise and the Circle Line Harbor Lights cruise, with real prices.',
     excerpt: 'A Statue of Liberty sunset cruise is one of the best-value evenings in New York. Here are the two to consider and how to pick between them.',
-    heroImage: 'https://cdn.getyourguide.com/img/tour/6412155436978.jpeg/145.jpg',
+    heroImage: 'https://cdn.getyourguide.com/img/tour/6412155436978.jpeg/99.jpg',
     heroImageAlt: 'Statue of Liberty at sunset seen from a New York Harbor cruise',
     content: `<p>A sunset cruise past the Statue of Liberty is the rare New York experience that is genuinely relaxing, reliably beautiful, and easy on the wallet. You watch the skyline turn gold, glide past Lady Liberty as the light softens, and see Lower Manhattan switch its lights on, all from a deck with a drink in hand. Two options stand out, and they suit slightly different evenings.</p>
 
@@ -158,7 +158,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Is a 9/11 Memorial & Museum Tour Worth It? (2026 Honest Review)',
     metaDescription: 'An honest 2026 look at whether a 9/11 Memorial and Museum ticket is worth booking, what to expect inside, how long to allow, and how to skip the ticket line.',
     excerpt: 'The 9/11 Memorial and Museum is one of the most powerful things you can do in New York. Here is what to expect and whether the ticket is worth it.',
-    heroImage: 'https://cdn.getyourguide.com/img/tour/f3b7550aa01e06ac.jpeg/145.jpg',
+    heroImage: 'https://cdn.getyourguide.com/img/tour/f3b7550aa01e06ac.jpeg/99.jpg',
     heroImageAlt: 'The 9/11 Memorial reflecting pools at the World Trade Center site in New York',
     content: `<p>Some New York attractions are about fun. This one is not, and that is exactly why so many visitors come away calling it the most meaningful few hours of their trip. The question is not really whether the 9/11 Memorial and Museum is good. It is whether you are ready for something heavy, and whether the paid museum ticket adds enough to the free outdoor memorial to be worth booking. Here is the honest answer.</p>
 
@@ -205,7 +205,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Is a NYC Hop-on Hop-off Bus Worth It in 2026? Honest Review',
     metaDescription: 'An honest 2026 review of the New York hop-on hop-off bus: who it actually suits, where it falls short in Manhattan traffic, and the alternatives worth considering.',
     excerpt: 'The hop-on hop-off bus is a New York classic, but it is not right for everyone. Here is an honest take on whether it is worth your money.',
-    heroImage: 'https://cdn.getyourguide.com/img/tour/9dbc2453b0f12984.jpeg/145.jpg',
+    heroImage: 'https://cdn.getyourguide.com/img/tour/9dbc2453b0f12984.jpeg/99.jpg',
     heroImageAlt: 'Open-top hop-on hop-off sightseeing bus in New York City',
     content: `<p>The open-top double-decker is one of the most recognisable sights in New York, and the hop-on hop-off model promises an easy way to see every landmark without working out the subway. It is a tempting pitch. It is also the one major New York experience where the honest answer is a firm "it depends", because the same bus that delights one traveller frustrates another. Here is who should book it and who should not.</p>
 
@@ -252,7 +252,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'How to Skip the Line at NYC Attractions (2026 Guide)',
     metaDescription: 'A practical 2026 guide to skipping the line at New York attractions: timed tickets, the best time of day to visit, and which skip-the-line tours are actually worth booking.',
     excerpt: 'Queues can swallow hours of a New York trip. Here is how to skip the line at the big attractions and spend your time seeing the city instead.',
-    heroImage: 'https://cdn.getyourguide.com/img/tour/6196b4ee9c0a1.jpeg/145.jpg',
+    heroImage: 'https://cdn.getyourguide.com/img/tour/6196b4ee9c0a1.jpeg/99.jpg',
     heroImageAlt: 'Visitors at SUMMIT One Vanderbilt observation deck in New York',
     content: `<p>New York rewards planning more than almost any city, and nowhere is that clearer than in its queues. The difference between a smooth day and a frustrating one usually comes down to a few small decisions made before you arrive. The good news is that skipping the line is mostly about buying the right ticket and showing up at the right time. Here is exactly how to do it.</p>
 
@@ -309,7 +309,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Is the New York CityPASS Worth It in 2026? Honest Math',
     metaDescription: 'An honest 2026 breakdown of whether the New York CityPASS is worth it: what it includes, who saves money, and when buying individual tickets is the better call.',
     excerpt: 'The New York CityPASS promises up to 42% off five top attractions. Here is when it actually saves you money and when it does not.',
-    heroImage: 'https://cdn.getyourguide.com/img/tour/6453d23f54c4c.png/145.jpg',
+    heroImage: 'https://cdn.getyourguide.com/img/tour/6453d23f54c4c.png/99.jpg',
     heroImageAlt: 'New York CityPASS covering five top New York attractions',
     content: `<p>Attraction passes sound great in the abstract and disappoint in practice more often than you would think, because the savings only materialise if the pass matches how you actually travel. The New York CityPASS is one of the better ones, but whether it is worth it for you comes down to simple arithmetic and a bit of honesty about your pace. Here is how to work it out.</p>
 
@@ -358,7 +358,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Is a Manhattan Helicopter Tour Worth It in 2026? Honest Review',
     metaDescription: 'An honest 2026 review of the Manhattan sightseeing helicopter tour: what you see, whether the high price is justified, and cheaper ways to get a great aerial view.',
     excerpt: 'A helicopter flight over Manhattan is a bucket-list splurge. Here is an honest look at whether it is worth the money and who should book it.',
-    heroImage: 'https://cdn.getyourguide.com/img/tour/4b99fec5755d4928f4ced9f4a6e1d5daf35e73875fbd7470c05f921ca74d071d.png/145.jpg',
+    heroImage: 'https://cdn.getyourguide.com/img/tour/4b99fec5755d4928f4ced9f4a6e1d5daf35e73875fbd7470c05f921ca74d071d.png/99.jpg',
     heroImageAlt: 'Aerial view of Manhattan from a sightseeing helicopter over New York',
     content: `<p>A helicopter flight over Manhattan is the definition of a splurge. It is the most expensive single experience most visitors will consider on a New York trip, and it lasts only a fraction of the time of anything else on the itinerary. So the honest question is not whether it is spectacular. It obviously is. The question is whether the spectacle justifies the price for you. Here is a straight answer.</p>
 
