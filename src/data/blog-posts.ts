@@ -6,6 +6,11 @@ import { BlogPost } from '@/lib/types';
 
 const A = 'target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline"';
 
+// Internal links. Every attraction mentioned in a post also points at its own
+// ticket page or category page, so the posts feed the commercial pages rather
+// than sending all of their equity straight out to GetYourGuide.
+const I = 'class="text-green-700 font-semibold hover:underline"';
+
 export const blogPosts: BlogPost[] = [
   {
     slug: 'best-nyc-observation-deck-top-of-the-rock-vs-edge-vs-summit',
@@ -23,15 +28,15 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Top of the Rock: the photographer's choice</h2>
 
-<p>Top of the Rock sits 70 floors up at Rockefeller Center. Its strength is composition. Because you are looking at the Empire State Building rather than standing on top of it, your photos have a recognisable centrepiece. The upper deck is open-air with low glass panels, so there is nothing between your camera and the city. Sunset slots sell out first for exactly this reason, so if golden hour matters to you, book the timed ticket days ahead.</p>
+<p>Top of the Rock sits 70 floors up at Rockefeller Center. Its strength is composition. Because you are looking at the Empire State Building rather than standing on top of it, your photos have a recognisable centrepiece. The upper deck is open-air with low glass panels, so there is nothing between your camera and the city. Sunset slots sell out first for exactly this reason, so if golden hour matters to you, book the timed ticket days ahead. All current <a href="/attractions/top-of-the-rock" ${I}>Top of the Rock tickets and tours</a> are listed with live prices on our attraction page.</p>
 
 <h2>Edge: the thrill-seeker's deck</h2>
 
-<p>Edge at Hudson Yards is the highest outdoor sky deck in the Western Hemisphere and it leans hard into the sensation of height. The floor near the tip has a glass panel you can stand on and look straight down 100 storeys, and the walls angle outward so you feel like you are hanging over the street. The view faces west and south, which is dramatic but less iconic, since you are looking away from Midtown's most famous towers. Book <a href="https://www.getyourguide.com/activity/-t404016?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>Edge from £36</a> if the experience of the height itself is the point. If vertigo is a problem, this is not your deck.</p>
+<p>Edge at Hudson Yards is the highest outdoor sky deck in the Western Hemisphere and it leans hard into the sensation of height. The floor near the tip has a glass panel you can stand on and look straight down 100 storeys, and the walls angle outward so you feel like you are hanging over the street. The view faces west and south, which is dramatic but less iconic, since you are looking away from Midtown's most famous towers. Book <a href="https://www.getyourguide.com/activity/-t404016?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>Edge from £36</a> if the experience of the height itself is the point, or compare every option on our <a href="/attractions/edge-observation-deck" ${I}>Edge observation deck tickets</a> page. If vertigo is a problem, this is not your deck.</p>
 
 <h2>SUMMIT One Vanderbilt: the art installation</h2>
 
-<p>SUMMIT is the newest and the strangest, and it has the most verified reviews of the three by a wide margin. It is less a viewing platform and more a mirrored, immersive art environment. Floor-to-ceiling mirrors multiply the skyline in every direction, there are reflective silver balloons in one room, and a glass ledge that juts out over Madison Avenue. Children and anyone who enjoys a photo-heavy experience tend to rate it highest. Purists who just want a clean skyline view sometimes find the mirrors gimmicky. You can book <a href="https://www.getyourguide.com/activity/-t404501?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>SUMMIT One Vanderbilt from £36</a> and judge for yourself, but go in knowing it is an experience first and a view second.</p>
+<p>SUMMIT is the newest and the strangest, and it has the most verified reviews of the three by a wide margin. It is less a viewing platform and more a mirrored, immersive art environment. Floor-to-ceiling mirrors multiply the skyline in every direction, there are reflective silver balloons in one room, and a glass ledge that juts out over Madison Avenue. Children and anyone who enjoys a photo-heavy experience tend to rate it highest. Purists who just want a clean skyline view sometimes find the mirrors gimmicky. You can book <a href="https://www.getyourguide.com/activity/-t404501?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>SUMMIT One Vanderbilt from £36</a> and judge for yourself, but go in knowing it is an experience first and a view second. Our <a href="/attractions/summit-one-vanderbilt" ${I}>SUMMIT One Vanderbilt tickets</a> page has the full breakdown of what the visit involves.</p>
 
 <h2>How to choose in one line</h2>
 
@@ -43,7 +48,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Timing beats everything</h2>
 
-<p>Whichever you choose, the time of day matters more than the deck. The sweet spot is a ticket about 45 minutes before sunset, so you catch the city in daylight, at golden hour, and lit up after dark, all on one ticket. Those slots go first. All three decks offer timed entry with free cancellation on most options, so there is no penalty for booking early and locking in the best slot.</p>
+<p>Whichever you choose, the time of day matters more than the deck. The sweet spot is a ticket about 45 minutes before sunset, so you catch the city in daylight, at golden hour, and lit up after dark, all on one ticket. Those slots go first. All three decks offer timed entry with free cancellation on most options, so there is no penalty for booking early and locking in the best slot. They also all sit on our list of <a href="/category/skip-the-line" ${I}>skip-the-line tours in New York City</a>, which is the fastest way to compare timed-entry prices side by side.</p>
 
 <p>If you have three clear evenings and a generous budget, doing all three across your trip is genuinely rewarding because each shows you a different New York. For everyone else, pick by the one-line guide above and book the sunset slot the moment your dates are set.</p>`,
     faqs: [
@@ -55,7 +60,7 @@ export const blogPosts: BlogPost[] = [
     relatedTourSlugs: ['new-york-city-top-of-the-rock-observation-deck-ticket', 'nyc-edge-immersive-observation-deck-ticket', 'nyc-summit-one-vanderbilt-tickets'],
     relatedBlogSlugs: ['how-to-skip-the-line-at-nyc-attractions', 'is-the-new-york-citypass-worth-it'],
     publishedDate: '2026-07-25',
-    updatedDate: '2026-07-25',
+    updatedDate: '2026-07-28',
   },
   {
     slug: 'statue-of-liberty-ferry-vs-cruise-tour',
@@ -73,7 +78,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Option 1: The official ferry (lands on the island)</h2>
 
-<p>The <a href="https://www.getyourguide.com/activity/-t393246?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>official Statue City Cruises ferry from £24</a> is the essential choice for most first-time visitors. It is the only operator licensed to dock at Liberty Island, and the ticket includes Ellis Island and its Immigration Museum, one of the most moving museums in the country. You explore both islands at your own pace with an audio guide, and you get skyline views on the crossing. Give it half a day. This is the best-value way to actually visit the statue rather than just see it.</p>
+<p>The <a href="https://www.getyourguide.com/activity/-t393246?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>official Statue City Cruises ferry from £24</a> is the essential choice for most first-time visitors. It is the only operator licensed to dock at Liberty Island, and the ticket includes Ellis Island and its Immigration Museum, one of the most moving museums in the country. You explore both islands at your own pace with an audio guide, and you get skyline views on the crossing. Give it half a day. This is the best-value way to actually visit the statue rather than just see it. You can compare all four <a href="/attractions/statue-of-liberty" ${I}>Statue of Liberty tours</a> and tickets, with live prices, on our attraction page.</p>
 
 <h2>Option 2: A guided tour with ferry (context included)</h2>
 
@@ -81,7 +86,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Option 3: A sightseeing cruise (no landing)</h2>
 
-<p>If you are happy to see the statue from the water and skip the queues, a harbour cruise is faster and often more relaxing. The <a href="https://www.getyourguide.com/activity/-t449842?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>Statue of Liberty Sunset Cruise from £20</a> sails from South Street Seaport past the statue and around Lower Manhattan with music on board, and the <a href="https://www.getyourguide.com/activity/-t108082?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>Circle Line Sunset and Harbor Lights Cruise from £34</a> catches golden hour and the skyline lighting up. These are wonderful evenings out, but you will not land. Book them for the atmosphere and the photos, not to tour the island.</p>
+<p>If you are happy to see the statue from the water and skip the queues, a harbour cruise is faster and often more relaxing. The <a href="https://www.getyourguide.com/activity/-t449842?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>Statue of Liberty Sunset Cruise from £20</a> sails from South Street Seaport past the statue and around Lower Manhattan with music on board, and the <a href="https://www.getyourguide.com/activity/-t108082?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>Circle Line Sunset and Harbor Lights Cruise from £34</a> catches golden hour and the skyline lighting up. These are wonderful evenings out, but you will not land. Book them for the atmosphere and the photos, not to tour the island. Both appear in the full list of <a href="/attractions/statue-of-liberty" ${I}>Statue of Liberty tickets and tours</a> if you want to compare them against the ferry options.</p>
 
 <h2>Which should you book?</h2>
 
@@ -93,7 +98,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Practical tips</h2>
 
-<p>Whatever you pick, book the earliest ferry slot you can. Queues at Battery Park build fast after mid-morning, and security screening adds time. If you want to climb into the pedestal or crown, note that those upgrades are limited and sell out weeks ahead, so a standard island landing via the ferry is what most visitors realistically get. All the options here offer free cancellation on most tickets, so you can reserve your preferred time with no risk.</p>
+<p>Whatever you pick, book the earliest ferry slot you can. Queues at Battery Park build fast after mid-morning, and security screening adds time. If you want to climb into the pedestal or crown, note that those upgrades are limited and sell out weeks ahead, so a standard island landing via the ferry is what most visitors realistically get. If you are building a downtown day around it, the ferry sits alongside the 9/11 Museum and the observation decks on our list of <a href="/category/skip-the-line" ${I}>skip-the-line tours in New York City</a>. All the options here offer free cancellation on most tickets, so you can reserve your preferred time with no risk.</p>
 
 <p>The bottom line is simple. Decide first whether landing on the island matters to you. If it does, the official ferry is the answer and everything else is optional. If it does not, a sunset cruise gives you the postcard view for less money and less hassle.</p>`,
     faqs: [
@@ -105,7 +110,7 @@ export const blogPosts: BlogPost[] = [
     relatedTourSlugs: ['statue-of-liberty-ellis-island-ticket-options-with-ferry', 'nyc-statue-of-liberty-ellis-island-guided-tour-with-ferry', 'nyc-statue-of-liberty-sunset-cruise-ticket', 'nyc-circle-line-2h-harbor-lights-cruise-skip-the-box-office'],
     relatedBlogSlugs: ['best-statue-of-liberty-sunset-cruise-which-to-book', 'how-to-skip-the-line-at-nyc-attractions'],
     publishedDate: '2026-07-25',
-    updatedDate: '2026-07-25',
+    updatedDate: '2026-07-28',
   },
   {
     slug: 'best-statue-of-liberty-sunset-cruise-which-to-book',
@@ -127,7 +132,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Option 2: The Circle Line Harbor Lights cruise</h2>
 
-<p>Circle Line is the most established name in New York harbour cruising, and its sunset sailing is a more complete sightseeing experience. Over roughly two hours you catch golden hour, pass the Statue of Liberty, and watch the skyline light up as darkness falls, with the full sweep of Lower Manhattan on show. At £34 it costs more, but you get a longer sail, a bigger vessel, and the reassurance of an operator with a very high review count. Choose this if you want your cruise to double as a proper skyline tour and you do not mind paying more for the extra time on the water.</p>
+<p>Circle Line is the most established name in New York harbour cruising, and its sunset sailing is a more complete sightseeing experience. Over roughly two hours you catch golden hour, pass the Statue of Liberty, and watch the skyline light up as darkness falls, with the full sweep of Lower Manhattan on show. At £34 it costs more, but you get a longer sail, a bigger vessel, and the reassurance of an operator with a very high review count. Choose this if you want your cruise to double as a proper skyline tour and you do not mind paying more for the extra time on the water. Both sailings sit alongside the island-landing options on our <a href="/attractions/statue-of-liberty" ${I}>Statue of Liberty tours</a> page, which is the quickest way to see the price gap between a cruise and a ferry ticket.</p>
 
 <h2>How to decide</h2>
 
@@ -140,7 +145,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>The whole point is the light, so the sailing time is everything. Check the local sunset time for your date and pick the departure that puts you on the water in the 45 minutes before and after. Summer sunsets are late, often after 8pm, so these become genuinely late-evening cruises in the warmer months. Bring a light layer even in summer, because the harbour breeze cools things down once the sun is gone.</p>
 
-<p>Both cruises offer free cancellation on most tickets and instant confirmation, so you can book your preferred evening as soon as your dates are set and adjust later if the weather turns. A clear night makes either one unforgettable, and even a slightly cloudy one usually delivers a dramatic sky. For the price, a Statue of Liberty sunset cruise is one of the easiest yeses on any New York itinerary.</p>`,
+<p>Both cruises offer free cancellation on most tickets and instant confirmation, so you can book your preferred evening as soon as your dates are set and adjust later if the weather turns. A clear night makes either one unforgettable, and even a slightly cloudy one usually delivers a dramatic sky. For the price, a Statue of Liberty sunset cruise is one of the easiest yeses on any New York itinerary. If you would rather spend the evening eating than sightseeing, the same stretch of water is covered by the dinner sailings on our <a href="/category/food-drink" ${I}>New York food, wine and nightlife tours</a> page.</p>`,
     faqs: [
       { question: 'What is the best Statue of Liberty sunset cruise in New York?', answer: 'For value and atmosphere, the South Street Seaport sunset cruise from around £20 is the top pick, with live music and a lively deck. For a longer, more complete sightseeing sail, the Circle Line Harbor Lights cruise from £34 covers more of the harbour and skyline over about two hours.' },
       { question: 'Do sunset cruises land on Liberty Island?', answer: 'No. Sunset cruises sail past the Statue of Liberty for photos and atmosphere but do not dock. If you want to land on Liberty Island and visit Ellis Island, you need the official Statue City Cruises ferry instead.' },
@@ -150,7 +155,7 @@ export const blogPosts: BlogPost[] = [
     relatedTourSlugs: ['nyc-statue-of-liberty-sunset-cruise-ticket', 'nyc-circle-line-2h-harbor-lights-cruise-skip-the-box-office', 'statue-of-liberty-ellis-island-ticket-options-with-ferry'],
     relatedBlogSlugs: ['statue-of-liberty-ferry-vs-cruise-tour', 'best-nyc-observation-deck-top-of-the-rock-vs-edge-vs-summit'],
     publishedDate: '2026-07-25',
-    updatedDate: '2026-07-25',
+    updatedDate: '2026-07-28',
   },
   {
     slug: 'is-a-9-11-memorial-and-museum-tour-worth-it',
@@ -164,7 +169,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The verdict</h2>
 
-<p>Yes, for most visitors it is worth it. The outdoor memorial with its twin reflecting pools is free and moving on its own, but the museum below ground is where the story is told, and it is told with extraordinary care. A <a href="https://www.getyourguide.com/activity/-t109024?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>9/11 Memorial and Museum timed ticket from £19</a> is one of the best-value cultural tickets in the city, and its 4.8 rating from tens of thousands of visitors reflects how strongly it lands. If you have any interest in modern history, book it.</p>
+<p>Yes, for most visitors it is worth it. The outdoor memorial with its twin reflecting pools is free and moving on its own, but the museum below ground is where the story is told, and it is told with extraordinary care. A <a href="https://www.getyourguide.com/activity/-t109024?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>9/11 Memorial and Museum timed ticket from £19</a> is one of the best-value cultural tickets in the city, and its 4.8 rating from tens of thousands of visitors reflects how strongly it lands. If you have any interest in modern history, book it. Current prices and slot availability are on our <a href="/attractions/9-11-memorial" ${I}>9/11 Memorial tickets and tours</a> page.</p>
 
 <h2>What the ticket actually gets you</h2>
 
@@ -176,7 +181,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Skip the ticket line</h2>
 
-<p>The museum uses timed entry, and buying ahead matters here for two reasons. First, popular slots genuinely sell out, especially late morning and midday. Second, a prebooked timed ticket lets you walk past the on-site ticket queue and straight to security. On a hot or cold day at an exposed downtown plaza, that saved time is worth a lot. Booking online also means you can pick a quieter early slot, which suits the reflective mood of the place far better than a crowded midday visit.</p>
+<p>The museum uses timed entry, and buying ahead matters here for two reasons. First, popular slots genuinely sell out, especially late morning and midday. Second, a prebooked timed ticket lets you walk past the on-site ticket queue and straight to security. On a hot or cold day at an exposed downtown plaza, that saved time is worth a lot. Booking online also means you can pick a quieter early slot, which suits the reflective mood of the place far better than a crowded midday visit. The museum is one of the few New York sights where a prebooked ticket makes a genuine difference, which is why it sits near the top of our <a href="/category/skip-the-line" ${I}>skip-the-line tours in New York City</a>.</p>
 
 <h2>Is it worth it for you? A quick guide</h2>
 
@@ -187,7 +192,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Make it part of a downtown day</h2>
 
-<p>The memorial sits at the heart of Lower Manhattan, so it pairs naturally with a walk to Battery Park for the Statue of Liberty ferries, or with a visit to a nearby observation deck for a very different perspective on the rebuilt skyline. Many visitors do the museum in the morning while they are freshest, then move on to something lighter in the afternoon. However you plan it, give the museum the time it deserves. Rushing it is the one real mistake people make.</p>`,
+<p>The memorial sits at the heart of Lower Manhattan, so it pairs naturally with a walk to Battery Park for the <a href="/attractions/statue-of-liberty" ${I}>Statue of Liberty tours</a> and ferries, or with a visit to a nearby observation deck such as <a href="/attractions/edge-observation-deck" ${I}>Edge at Hudson Yards</a> for a very different perspective on the rebuilt skyline. Many visitors do the museum in the morning while they are freshest, then move on to something lighter in the afternoon. However you plan it, give the museum the time it deserves. Rushing it is the one real mistake people make.</p>`,
     faqs: [
       { question: 'Is the 9/11 Memorial and Museum worth visiting?', answer: 'Yes, for most visitors it is one of the most meaningful experiences in New York. The outdoor memorial is free and moving, and the museum below tells the story with exceptional care using original artefacts and testimony. At around £19 it is excellent value and rates 4.8 from tens of thousands of visitors.' },
       { question: 'How long should I spend at the 9/11 Museum?', answer: 'Allow at least two to three hours if you want to read the exhibits and absorb the testimony rather than rush. The museum is large and emotionally intense, so a slower early-morning visit tends to suit the mood better than a crowded midday one.' },
@@ -197,7 +202,7 @@ export const blogPosts: BlogPost[] = [
     relatedTourSlugs: ['911-memorial-museum-admission-skip-the-ticket-line', 'nyc-edge-immersive-observation-deck-ticket', 'statue-of-liberty-ellis-island-ticket-options-with-ferry'],
     relatedBlogSlugs: ['how-to-skip-the-line-at-nyc-attractions', 'is-the-new-york-citypass-worth-it'],
     publishedDate: '2026-07-25',
-    updatedDate: '2026-07-25',
+    updatedDate: '2026-07-28',
   },
   {
     slug: 'is-a-nyc-hop-on-hop-off-bus-worth-it',
@@ -215,7 +220,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>What it does well</h2>
 
-<p>The genuine strengths are real. You get an elevated, open-air view of the city that you simply cannot get at street level, which makes for great photos and a nice orientation on your first day. The commentary points out landmarks you would otherwise walk straight past. And for anyone who tires easily, being able to sit, ride, and hop off at a major sight is a comfort that walking tours cannot match. As a lazy first-morning overview, it does the job.</p>
+<p>The genuine strengths are real. You get an elevated, open-air view of the city that you simply cannot get at street level, which makes for great photos and a nice orientation on your first day. The commentary points out landmarks you would otherwise walk straight past. And for anyone who tires easily, being able to sit, ride, and hop off at a major sight is a comfort that walking tours cannot match. As a lazy first-morning overview, it does the job. If you want the orientation but with a person rather than a recording, our <a href="/category/guided-tours" ${I}>guided tours in New York</a> page lists the walking and neighbourhood alternatives.</p>
 
 <h2>Where it falls short</h2>
 
@@ -230,11 +235,11 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Better-value alternatives to consider</h2>
 
-<p>If your real goal is a great view of the city, your money often goes further on an observation deck like <a href="https://www.getyourguide.com/activity/-t37483?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>Top of the Rock from £34</a>, which gives you the definitive skyline for the same price as a bus ticket. And if you plan to see several paid attractions anyway, a <a href="https://www.getyourguide.com/activity/-t18597?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>New York CityPASS from £123</a> bundles the big sights at a discount and often delivers far more value than a bus pass for a similar style of visitor.</p>
+<p>If your real goal is a great view of the city, your money often goes further on an observation deck like <a href="https://www.getyourguide.com/activity/-t37483?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>Top of the Rock from £34</a>, which gives you the definitive skyline for the same price as a bus ticket. Our <a href="/attractions/top-of-the-rock" ${I}>Top of the Rock tickets and tours</a> page has the time-slot detail. And if you plan to see several paid attractions anyway, a <a href="https://www.getyourguide.com/activity/-t18597?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>New York CityPASS from £123</a> bundles the big sights at a discount and often delivers far more value than a bus pass for a similar style of visitor. You will find it on our <a href="/category/top-attractions" ${I}>top New York attractions</a> page.</p>
 
 <h2>The bottom line</h2>
 
-<p>The hop-on hop-off bus is not a rip-off, but it is not the universal winner its marketing suggests. Book it if comfort, an open-top view, and not having to plan transport are your priorities, and treat it as a relaxed overview rather than an efficient way to tick off sights. If speed and value matter more, spend the same money on a great view or a multi-attraction pass and walk the rest. Whatever you choose, tickets offer free cancellation on most options, so you can hold a spot and decide once you see the forecast.</p>`,
+<p>The hop-on hop-off bus is not a rip-off, but it is not the universal winner its marketing suggests. Book it if comfort, an open-top view, and not having to plan transport are your priorities, and treat it as a relaxed overview rather than an efficient way to tick off sights. If speed and value matter more, spend the same money on a great view or a multi-attraction pass and walk the rest, and check the <a href="/category/skip-the-line" ${I}>skip-the-line tours in New York City</a> before you book anything with a queue. Whatever you choose, tickets offer free cancellation on most options, so you can hold a spot and decide once you see the forecast.</p>`,
     faqs: [
       { question: 'Is the New York hop-on hop-off bus worth it?', answer: 'It is worth it for visitors with limited mobility, short trips, or a preference for open-top sightseeing over walking. Its 4.2 rating is lower than most New York attractions, mainly because of Manhattan traffic. Confident walkers who are happy on the subway will often move faster and cheaper without it.' },
       { question: 'How slow is the hop-on hop-off bus in Manhattan?', answer: 'It can be slow. Midtown traffic is unpredictable, buses bunch up, and waits at stops can exceed the timetable at peak times. Because Manhattan is compact and walkable, keen walkers frequently cover the same ground faster on foot, which is the main reason the ride draws mixed reviews.' },
@@ -244,7 +249,7 @@ export const blogPosts: BlogPost[] = [
     relatedTourSlugs: ['new-york-hop-on-hop-off-sightseeing-tour-by-open-top-bus', 'new-york-city-top-of-the-rock-observation-deck-ticket', 'new-york-citypassr-save-up-to-41-at-5-top-attractions'],
     relatedBlogSlugs: ['is-the-new-york-citypass-worth-it', 'best-nyc-observation-deck-top-of-the-rock-vs-edge-vs-summit'],
     publishedDate: '2026-07-25',
-    updatedDate: '2026-07-25',
+    updatedDate: '2026-07-28',
   },
   {
     slug: 'how-to-skip-the-line-at-nyc-attractions',
@@ -266,14 +271,15 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The skip-the-line tickets worth booking</h2>
 
-<p>These are the New York attractions where a prebooked skip-the-line ticket pays off most, because the walk-up queues are the longest:</p>
+<p>These are the New York attractions where a prebooked skip-the-line ticket pays off most, because the walk-up queues are the longest. The full ranked set is on our <a href="/category/skip-the-line" ${I}>skip-the-line tours in New York City</a> page:</p>
 
 <ul>
-<li><strong>SUMMIT One Vanderbilt:</strong> the mirrored observation experience beside Grand Central draws big crowds. Book <a href="https://www.getyourguide.com/activity/-t404501?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>SUMMIT One Vanderbilt from £36</a> with a timed slot.</li>
-<li><strong>Edge at Hudson Yards:</strong> the highest outdoor deck, and a popular one. Reserve <a href="https://www.getyourguide.com/activity/-t404016?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>Edge from £36</a> ahead, especially for sunset.</li>
-<li><strong>Top of the Rock:</strong> the classic skyline view fills up fast at golden hour. Book <a href="https://www.getyourguide.com/activity/-t37483?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>Top of the Rock from £34</a> with a set time.</li>
-<li><strong>9/11 Memorial and Museum:</strong> timed entry that sells out midday. A <a href="https://www.getyourguide.com/activity/-t109024?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>9/11 Museum ticket from £19</a> lets you skip the ticket line.</li>
+<li><strong>SUMMIT One Vanderbilt:</strong> the mirrored observation experience beside Grand Central draws big crowds. Book <a href="https://www.getyourguide.com/activity/-t404501?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>SUMMIT One Vanderbilt from £36</a> with a timed slot, or compare options on our <a href="/attractions/summit-one-vanderbilt" ${I}>SUMMIT One Vanderbilt tickets</a> page.</li>
+<li><strong>Edge at Hudson Yards:</strong> the highest outdoor deck, and a popular one. Reserve <a href="https://www.getyourguide.com/activity/-t404016?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>Edge from £36</a> ahead, especially for sunset. More detail on our <a href="/attractions/edge-observation-deck" ${I}>Edge observation deck tickets</a> page.</li>
+<li><strong>Top of the Rock:</strong> the classic skyline view fills up fast at golden hour. Book <a href="https://www.getyourguide.com/activity/-t37483?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>Top of the Rock from £34</a> with a set time, and see which slot to pick on our <a href="/attractions/top-of-the-rock" ${I}>Top of the Rock tickets and tours</a> page.</li>
+<li><strong>9/11 Memorial and Museum:</strong> timed entry that sells out midday. A <a href="https://www.getyourguide.com/activity/-t109024?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>9/11 Museum ticket from £19</a> lets you skip the ticket line. Full details on our <a href="/attractions/9-11-memorial" ${I}>9/11 Memorial tickets and tours</a> page.</li>
 <li><strong>American Museum of Natural History:</strong> a huge, popular museum where prebooking saves real time. Get <a href="https://www.getyourguide.com/activity/-t25757?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>Natural History Museum admission from £28</a>.</li>
+<li><strong>Statue of Liberty ferry:</strong> a boarding queue plus airport-style security at Battery Park, so the earliest sailing is worth real money. Compare all four <a href="/attractions/statue-of-liberty" ${I}>Statue of Liberty tours</a> before you book.</li>
 </ul>
 
 <h2>Consider a multi-attraction pass</h2>
@@ -291,7 +297,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The bottom line</h2>
 
-<p>You cannot control New York's crowds, but you can route around them. Book timed tickets before you travel, aim for the first slot of the day at everything except sunset views, and lean on a multi-attraction pass if you are seeing a lot. Do that and you will spend your trip looking at the city rather than standing in line to see it. Most tickets include free cancellation, so there is no downside to locking in your times early.</p>`,
+<p>You cannot control New York's crowds, but you can route around them. Book timed tickets before you travel, aim for the first slot of the day at everything except sunset views, and lean on a multi-attraction pass if you are seeing a lot. Do that and you will spend your trip looking at the city rather than standing in line to see it. Most tickets include free cancellation, so there is no downside to locking in your times early. Start with the ranked <a href="/category/skip-the-line" ${I}>skip-the-line tours and tickets in New York</a> and work down your list.</p>`,
     faqs: [
       { question: 'What is the best way to skip the line at New York attractions?', answer: 'Book a timed ticket online before you go. It guarantees entry at attractions that sell out and lets you walk past the on-site ticket queue straight to security or entry. Pairing that with an early-morning slot is the most effective way to avoid queues at almost every major New York attraction.' },
       { question: 'What time of day is least busy at NYC attractions?', answer: 'The first entry slot of the morning and the last hour or two before closing are the quietest at most paid attractions, while midday and mid-afternoon are busiest. The main exception is observation decks at sunset, which are the busiest and best slots, so book those as early as possible.' },
@@ -301,7 +307,7 @@ export const blogPosts: BlogPost[] = [
     relatedTourSlugs: ['nyc-summit-one-vanderbilt-tickets', 'nyc-edge-immersive-observation-deck-ticket', 'new-york-city-top-of-the-rock-observation-deck-ticket', '911-memorial-museum-admission-skip-the-ticket-line', 'american-museum-of-natural-history-super-saver-admission', 'new-york-citypassr-save-up-to-41-at-5-top-attractions'],
     relatedBlogSlugs: ['is-the-new-york-citypass-worth-it', 'best-nyc-observation-deck-top-of-the-rock-vs-edge-vs-summit'],
     publishedDate: '2026-07-25',
-    updatedDate: '2026-07-25',
+    updatedDate: '2026-07-28',
   },
   {
     slug: 'is-the-new-york-citypass-worth-it',
@@ -330,15 +336,15 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The real advantage beyond the discount</h2>
 
-<p>The saving is the headline, but the convenience is underrated. One purchase covers several attractions, so you are not buying tickets piecemeal all week, and you can still reserve timed entry at each sight, which keeps the skip-the-line benefit intact. That combination of lower cost and fewer separate bookings is what pushes most eligible visitors toward yes.</p>
+<p>The saving is the headline, but the convenience is underrated. One purchase covers several attractions, so you are not buying tickets piecemeal all week, and you can still reserve timed entry at each sight, which keeps the <a href="/category/skip-the-line" ${I}>skip-the-line benefit</a> intact. That combination of lower cost and fewer separate bookings is what pushes most eligible visitors toward yes.</p>
 
 <h2>When individual tickets win</h2>
 
-<p>If you are selective, buying direct is smarter. Say you only really want a great skyline view and one museum. In that case, a single <a href="https://www.getyourguide.com/activity/-t37483?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>Top of the Rock ticket from £34</a> plus a <a href="https://www.getyourguide.com/activity/-t25757?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>Natural History Museum ticket from £28</a> costs far less than the pass, and you skip paying for attractions you would never visit. The pass only pays off when you use most of what it includes, so be honest about how many of the big sights you will genuinely get to.</p>
+<p>If you are selective, buying direct is smarter. Say you only really want a great skyline view and one museum. In that case, a single <a href="https://www.getyourguide.com/activity/-t37483?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>Top of the Rock ticket from £34</a> plus a <a href="https://www.getyourguide.com/activity/-t25757?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>Natural History Museum ticket from £28</a> costs far less than the pass, and you skip paying for attractions you would never visit. Our <a href="/attractions/top-of-the-rock" ${I}>Top of the Rock tickets and tours</a> page has the time-slot detail if that is the one view you want. The pass only pays off when you use most of what it includes, so be honest about how many of the big sights you will genuinely get to.</p>
 
 <h2>A quick way to decide</h2>
 
-<p>Make a shortlist of the attractions you actually intend to visit. If four or more of them are the big-ticket sights the pass covers, buy the pass and enjoy the discount and the simplicity. If your list is short or leans toward free and neighbourhood experiences, buy individual timed tickets for exactly what you want. Either way, book with free cancellation on most options so you can adjust as your plans firm up.</p>
+<p>Make a shortlist of the attractions you actually intend to visit. If four or more of them are the big-ticket sights the pass covers, buy the pass and enjoy the discount and the simplicity. Most of them are on our <a href="/category/top-attractions" ${I}>top New York attractions</a> page, so it is a quick list to check against. If your list is short or leans toward free and neighbourhood experiences, buy individual timed tickets for exactly what you want. Either way, book with free cancellation on most options so you can adjust as your plans firm up.</p>
 
 <p>The New York CityPASS is not a gimmick. It is a genuinely good deal for the visitor it is designed for, and a waste of money for everyone else. The pass does not decide that. Your itinerary does.</p>`,
     faqs: [
@@ -350,7 +356,7 @@ export const blogPosts: BlogPost[] = [
     relatedTourSlugs: ['new-york-citypassr-save-up-to-41-at-5-top-attractions', 'new-york-city-top-of-the-rock-observation-deck-ticket', 'nyc-edge-immersive-observation-deck-ticket', 'american-museum-of-natural-history-super-saver-admission'],
     relatedBlogSlugs: ['how-to-skip-the-line-at-nyc-attractions', 'is-a-nyc-hop-on-hop-off-bus-worth-it'],
     publishedDate: '2026-07-25',
-    updatedDate: '2026-07-25',
+    updatedDate: '2026-07-28',
   },
   {
     slug: 'is-a-manhattan-helicopter-tour-worth-it',
@@ -383,11 +389,11 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Cheaper ways to see New York from above</h2>
 
-<p>If it is the aerial view you are chasing rather than the flight itself, your money stretches much further on an observation deck. A <a href="https://www.getyourguide.com/activity/-t404016?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>ticket to Edge from £36</a> puts you on the highest outdoor deck in the city, and <a href="https://www.getyourguide.com/activity/-t404501?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>SUMMIT One Vanderbilt from £36</a> gives a mirrored, immersive high-altitude experience. Both cost a fraction of the helicopter and let you linger for as long as you like, which the flight never can.</p>
+<p>If it is the aerial view you are chasing rather than the flight itself, your money stretches much further on an observation deck. A <a href="https://www.getyourguide.com/activity/-t404016?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>ticket to Edge from £36</a> puts you on the highest outdoor deck in the city, and <a href="https://www.getyourguide.com/activity/-t404501?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_nyc_tours" ${A}>SUMMIT One Vanderbilt from £36</a> gives a mirrored, immersive high-altitude experience. Both cost a fraction of the helicopter and let you linger for as long as you like, which the flight never can. Compare them on our <a href="/attractions/edge-observation-deck" ${I}>Edge observation deck tickets</a> and <a href="/attractions/summit-one-vanderbilt" ${I}>SUMMIT One Vanderbilt tickets</a> pages, or against the classic view on our <a href="/attractions/top-of-the-rock" ${I}>Top of the Rock tickets and tours</a> page.</p>
 
 <h2>The bottom line</h2>
 
-<p>A Manhattan helicopter tour is one of the great New York splurges, and the people who book it rarely regret it. But it is a want, not a need. If the price is comfortable and the idea thrills you, book it and treat it as the highlight of your trip. If you are weighing every pound, put the money toward an observation deck and a couple of other experiences instead. Most helicopter bookings offer flexible terms, so check the cancellation policy and build in a buffer day in case the weather does not cooperate.</p>`,
+<p>A Manhattan helicopter tour is one of the great New York splurges, and the people who book it rarely regret it. But it is a want, not a need. If the price is comfortable and the idea thrills you, book it and treat it as the highlight of your trip. If you are weighing every pound, put the money toward an observation deck and a couple of other experiences instead, all of which are priced up on our <a href="/category/skip-the-line" ${I}>skip-the-line tours in New York City</a> page. Most helicopter bookings offer flexible terms, so check the cancellation policy and build in a buffer day in case the weather does not cooperate.</p>`,
     faqs: [
       { question: 'Is a Manhattan helicopter tour worth the money?', answer: 'It is worth it if an aerial view of New York is a genuine bucket-list moment and the cost will not strain the rest of your trip. At around £241 it is a splurge, not a value pick, but its 4.8 rating shows the experience rarely disappoints. Book it for the thrill, not because you need a good view.' },
       { question: 'How long is a New York sightseeing helicopter flight?', answer: 'These are short sightseeing flights, which is why the cost per minute is high. You get a fast, dramatic sweep over Manhattan, the rivers, and major landmarks. If you want a long, unhurried view, an observation deck is a better fit for the time and money.' },
@@ -397,7 +403,7 @@ export const blogPosts: BlogPost[] = [
     relatedTourSlugs: ['nyc-manhattan-sightseeing-helicopter-tour', 'nyc-edge-immersive-observation-deck-ticket', 'nyc-summit-one-vanderbilt-tickets'],
     relatedBlogSlugs: ['best-nyc-observation-deck-top-of-the-rock-vs-edge-vs-summit', 'how-to-skip-the-line-at-nyc-attractions'],
     publishedDate: '2026-07-25',
-    updatedDate: '2026-07-25',
+    updatedDate: '2026-07-28',
   },
 ];
 

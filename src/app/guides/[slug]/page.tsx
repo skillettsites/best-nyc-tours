@@ -76,6 +76,11 @@ export default async function GuidePage({ params }: { params: Params }) {
         <article>
           <header className="mb-10">
             <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">{guide.title}</h1>
+            {guide.answerCapsule && (
+              <div className="mt-4 rounded-xl border border-green-200 bg-green-50 p-5">
+                <p className="text-base text-gray-800 leading-relaxed">{guide.answerCapsule}</p>
+              </div>
+            )}
             <p className="mt-4 text-lg text-gray-600">{guide.excerpt}</p>
             <time className="mt-3 block text-sm text-gray-500" dateTime={guide.updatedDate}>
               Updated: {new Date(guide.updatedDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}

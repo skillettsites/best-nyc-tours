@@ -58,7 +58,12 @@ export default async function AttractionPage({ params }: { params: Params }) {
 
         <div className="mt-4 max-w-3xl">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">{a.title}</h1>
-          <p className="mt-3 text-lg text-gray-600">{a.intro}</p>
+          {a.answerCapsule && (
+            <div className="mt-4 rounded-xl border border-green-200 bg-green-50 p-5">
+              <p className="text-base text-gray-800 leading-relaxed">{a.answerCapsule}</p>
+            </div>
+          )}
+          <p className="mt-4 text-lg text-gray-600">{a.intro}</p>
           <div className="mt-4 flex flex-wrap items-center gap-3">
             {top && (
               <TrackedGYGLink
@@ -83,6 +88,35 @@ export default async function AttractionPage({ params }: { params: Params }) {
             <TourCard key={t.slug} tour={t} />
           ))}
         </div>
+
+        {a.bodySections && a.bodySections.length > 0 && (
+          <div className="mt-14 max-w-3xl">
+            {a.bodySections.map((section) => (
+              <section key={section.heading} className="mb-10">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">{section.heading}</h2>
+                <div className="space-y-4">
+                  {section.paragraphs.map((p, i) => (
+                    <p key={i} className="text-gray-700 leading-relaxed">{p}</p>
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
+        )}
+
+        {a.relatedGuides && a.relatedGuides.length > 0 && (
+          <section className="mt-12 rounded-xl border border-gray-200 bg-gray-50 p-6 max-w-3xl">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">{a.name} guides worth reading first</h2>
+            <ul className="space-y-4">
+              {a.relatedGuides.map((g) => (
+                <li key={g.href}>
+                  <Link href={g.href} className="text-green-700 font-semibold hover:underline">{g.title}</Link>
+                  <p className="mt-0.5 text-sm text-gray-600">{g.blurb}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         <section className="mt-14">
           <h2 className="text-2xl font-bold text-gray-900 mb-5">{a.name} tickets: FAQ</h2>

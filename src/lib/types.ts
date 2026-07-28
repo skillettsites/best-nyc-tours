@@ -33,6 +33,7 @@ export interface Category {
   icon: string;
   tourSlugs: string[];
   faqs: FAQ[];
+  answerCapsule?: string;
 }
 
 export interface Guide {
@@ -46,6 +47,7 @@ export interface Guide {
   faqs: FAQ[];
   publishedDate: string;
   updatedDate: string;
+  answerCapsule?: string;
 }
 
 export interface GuideSection {

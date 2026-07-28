@@ -94,6 +94,14 @@ export default function Top10Page() {
             confirmation and free cancellation on most options. Tap any image or the Book Now button to check live prices
             and availability.
           </p>
+          <p className="mt-3 text-gray-700">
+            This page ranks purely on rating and verified review volume. If you want the same shortlist with prices,
+            cost bands and a note on why each pick earns its place, see the full ranked list of the{' '}
+            <Link href="/guides/best-new-york-tours-2026" className="font-semibold text-green-700 hover:underline">
+              best New York tours
+            </Link>{' '}
+            for 2026.
+          </p>
           <p className="mt-3 text-sm text-gray-500">
             Updated {new Date(CONTENT_DATE).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })} &middot;{' '}
             {top10.length} tours ranked #1 to #{top10.length}

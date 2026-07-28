@@ -73,6 +73,13 @@ export default function HomePage() {
           <p className="mt-4 text-lg text-on-surface-2 leading-relaxed">
             {`Top-rated ${SITE_CITY} experiences, booked direct through GetYourGuide. Instant confirmation, free cancellation on most bookings.`}
           </p>
+          <p className="mt-3 text-base text-on-surface-2">
+            Still deciding? Read our ranked guide to the{' '}
+            <Link href="/guides/best-new-york-tours-2026" className="font-semibold text-primary hover:underline">
+              best New York tours
+            </Link>{' '}
+            for 2026, with real prices and why each one made the list.
+          </p>
           <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-surface-muted px-4 py-1.5 text-sm font-medium text-on-surface-2 ring-1 ring-border">
             <span className="text-highlight">&#9733;</span>
             <span>{trustStats.avgRating.toFixed(1)} average across {(trustStats.totalReviews / 1000).toFixed(0)}k+ verified reviews</span>
