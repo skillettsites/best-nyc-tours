@@ -21,6 +21,11 @@ export interface Tour {
   affiliateUrl: string;
   faqs: FAQ[];
   relatedSlugs: string[];
+  /**
+   * Live GetYourGuide cancellation terms for this exact activity, verified against the
+   * product page. Omitted means the standard free cancellation up to 24 hours before.
+   */
+  cancellationPolicy?: 'free-24h' | 'free-3d' | 'non-refundable';
 }
 
 export interface Category {

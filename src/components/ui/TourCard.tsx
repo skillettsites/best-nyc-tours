@@ -22,8 +22,17 @@ function getPopularityBadge(reviewCount: number): string | null {
   return null;
 }
 
+// Verified per-activity cancellation terms. Never show a free-cancellation badge
+// on a product that is non-refundable.
+function cancelBadge(policy?: string): string | null {
+  if (policy === 'non-refundable') return null;
+  if (policy === 'free-3d') return 'Free cancellation (3 days)';
+  return 'Free cancellation';
+}
+
 export default function TourCard({ tour }: { tour: Tour }) {
   const badge = getPopularityBadge(tour.reviewCount);
+  const cancelLabel = cancelBadge(tour.cancellationPolicy);
 
   return (
     <article className="group relative bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl active:shadow-lg transition-all duration-300 hover:-translate-y-1 active:translate-y-0">
@@ -51,15 +60,17 @@ export default function TourCard({ tour }: { tour: Tour }) {
             </div>
           )}
 
-          {/* Free cancellation badge */}
-          <div className="absolute top-3 right-3 z-10">
-            <span className="inline-flex items-center gap-1 rounded-full bg-green-600 px-2.5 py-1 text-xs font-semibold text-white shadow-lg">
-              <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              Free cancellation
-            </span>
-          </div>
+          {/* Cancellation badge, only where the live product actually allows it */}
+          {cancelLabel && (
+            <div className="absolute top-3 right-3 z-10">
+              <span className="inline-flex items-center gap-1 rounded-full bg-green-600 px-2.5 py-1 text-xs font-semibold text-white shadow-lg">
+                <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                {cancelLabel}
+              </span>
+            </div>
+          )}
 
           {/* Duration overlay */}
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">

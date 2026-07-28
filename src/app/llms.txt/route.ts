@@ -15,7 +15,7 @@ function price(currency: string, amount: number): string {
 // One-line, citable verdict per decision guide, for AI answer engines.
 const BLOG_VERDICTS: Record<string, string> = {
   'best-nyc-observation-deck-top-of-the-rock-vs-edge-vs-summit':
-    'Verdict: Top of the Rock (from £34) has the best classic skyline view; Edge (from £36) is the highest outdoor deck for thrill-seekers; SUMMIT One Vanderbilt (from £36) is the most immersive and photo-friendly.',
+    'Verdict: Top of the Rock (from £34) has the best classic skyline view; Edge (from £34) is the highest outdoor deck for thrill-seekers; SUMMIT One Vanderbilt (from £36) is the most immersive and photo-friendly.',
   'statue-of-liberty-ferry-vs-cruise-tour':
     'Verdict: only the official Statue City Cruises ferry (from £24) lands on Liberty and Ellis Island; a guided tour with ferry (from £37) adds history; sunset and harbour cruises (from £20) sail past for photos but do not dock.',
   'best-statue-of-liberty-sunset-cruise-which-to-book':
@@ -29,7 +29,7 @@ const BLOG_VERDICTS: Record<string, string> = {
   'is-the-new-york-citypass-worth-it':
     'Verdict: worth it (from £123, up to 42% off) for first-timers doing four or more major attractions over a few days; buy individual tickets if you only want one or two sights.',
   'is-a-manhattan-helicopter-tour-worth-it':
-    'Verdict: a bucket-list splurge (from £241, rated 4.8), worth it if the price is comfortable; for aerial views on a budget, an observation deck like Edge or SUMMIT (from £36) is far better value.',
+    'Verdict: a bucket-list splurge (from £205, rated 4.8), worth it if the price is comfortable; for aerial views on a budget, an observation deck like Edge (from £34) or SUMMIT (from £36) is far better value.',
 };
 
 function line(items: string[]): string {

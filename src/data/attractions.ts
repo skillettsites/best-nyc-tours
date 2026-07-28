@@ -47,7 +47,7 @@ export const attractions: Attraction[] = [
     ],
     faqs: [
       { question: 'How much are Statue of Liberty tickets?', answer: 'Statue of Liberty tickets and tours in New York start from around £20 for a sunset cruise that sails past the statue. The official ferry that lands on Liberty Island and Ellis Island starts at £24, and a guided tour with ferry at £37. The ranked list shows current prices.' },
-      { question: 'What is the best Statue of Liberty tour?', answer: 'The top-rated option is NYC Statue City Cruises: Official Statue of Liberty Tickets, rated 4.6 stars by 19,908 travellers, from £24. It is also the only ticket here that actually docks at Liberty Island.' },
+      { question: 'What is the best Statue of Liberty tour?', answer: 'The top-rated option is NYC Statue City Cruises: Official Statue of Liberty Tickets, rated 4.6 stars by 20,163 travellers, from £24. It is also the only ticket here that actually docks at Liberty Island.' },
       { question: 'Which Statue of Liberty ticket lands on the island?', answer: 'Only the official Statue City Cruises ferry docks at Liberty Island, and that ticket includes Ellis Island and its Immigration Museum. Sightseeing and sunset cruises sail past the statue for photographs but do not land, so book the official ferry if walking up to the statue matters to you.' },
       { question: 'Can I skip the line at the Statue of Liberty?', answer: 'Booking online secures your sailing time and gets you past the ticket window, but everyone still passes through security screening at Battery Park. The most effective move is booking the earliest departure of the day, before the queues build after mid-morning.' },
     ],
@@ -84,7 +84,7 @@ export const attractions: Attraction[] = [
     ],
     faqs: [
       { question: 'How much are Top of the Rock tickets?', answer: 'Top of the Rock tickets in New York start from around £34 for timed entry to the observation deck. The ranked list shows current prices and live availability.' },
-      { question: 'What is the best Top of the Rock ticket?', answer: 'The top-rated option is New York City: Top of the Rock Observation Deck Ticket, rated 4.6 stars by 21,145 travellers, from £34.' },
+      { question: 'What is the best Top of the Rock ticket?', answer: 'The top-rated option is New York City: Top of the Rock Observation Deck Ticket, rated 4.6 stars by 21,397 travellers, from £34.' },
       { question: 'What is the best time to visit Top of the Rock?', answer: 'Book a slot about 45 minutes before sunset so a single ticket gives you daylight, golden hour and the lit-up city after dark. Those slots sell out first. If sunset has gone, take the first entry of the morning, which is the quietest time on the deck.' },
       { question: 'Is Top of the Rock better than Edge or SUMMIT?', answer: 'For the classic skyline photograph, yes. Top of the Rock is the only major deck that captures both the Empire State Building and Central Park in one view. Edge is better for the thrill of the highest outdoor deck, and SUMMIT One Vanderbilt for a mirrored, immersive experience.' },
       { question: 'Can I skip the line at Top of the Rock?', answer: 'Yes. A prebooked timed ticket lets you walk past the on-site ticket queue and go straight to entry. Book ahead in peak season, as the best slots sell out.' },
@@ -95,17 +95,18 @@ export const attractions: Attraction[] = [
     name: 'Broadway Shows',
     title: 'Broadway Shows Tickets and Tours',
     metaTitle: 'Broadway Shows Tickets and Tours 2026',
-    metaDescription: 'Book Broadway show tickets in New York from £53, with instant confirmation, mobile entry and free cancellation on most options through GetYourGuide.',
-    intro: 'Compare the best Broadway Shows tickets and guided tours in New York, ranked by verified reviews. Booking online guarantees entry, unlocks skip-the-line access where offered, and gives free cancellation on most options. Every option below links straight to GetYourGuide.',
+    metaDescription: 'Book Broadway show tickets in New York from £54, with instant confirmation and mobile entry through GetYourGuide. Broadway tickets are non-refundable, so pick your date carefully.',
+    intro: 'Compare the best Broadway Shows tickets in New York, ranked by verified reviews. Booking online guarantees your seat and the ticket lands on your phone straight away. Note that Broadway tickets are sold on a non-refundable basis, so confirm your date and time before you book. Every option below links straight to GetYourGuide.',
     tourSlugs: ['nyc-mj-the-musical-on-broadway'],
     relatedGuides: [
       { href: '/guides/first-time-in-new-york', title: 'First time in New York: essential tours', blurb: 'What to book first on a first visit, and how to build the rest of the trip around it.' },
       { href: '/guides/best-new-york-tours-2026', title: 'Best New York tours in 2026', blurb: 'The full ranked list of the highest-rated New York experiences, with prices.' },
     ],
     faqs: [
-      { question: 'How much are Broadway show tickets?', answer: 'Broadway tickets in New York start from around £53 through GetYourGuide. The ranked list shows current prices and availability.' },
-      { question: 'What is the best-rated Broadway show to book?', answer: 'The top-rated option is NYC: MJ the Michael Jackson Musical on Broadway, rated 4.8 stars by 2,268 travellers, from £53.' },
-      { question: 'Should I book Broadway tickets in advance?', answer: 'Yes. Popular performances and weekend evenings sell out first, and booking online means the ticket lands on your phone straight away. Most options offer free cancellation, so booking early carries little risk.' },
+      { question: 'How much are Broadway show tickets?', answer: 'Broadway tickets in New York start from around £54 through GetYourGuide. The ranked list shows current prices and availability.' },
+      { question: 'What is the best-rated Broadway show to book?', answer: 'The top-rated option is NYC: MJ the Michael Jackson Musical on Broadway, rated 4.8 stars by 2,377 travellers, from £54.' },
+      { question: 'Can I cancel a Broadway ticket?', answer: 'No. Broadway tickets booked through GetYourGuide are non-refundable, so they cannot be cancelled or moved to another date once confirmed. Only book a performance you are certain you can attend.' },
+      { question: 'Should I book Broadway tickets in advance?', answer: 'Yes. Popular performances and weekend evenings sell out first, and booking online means the ticket lands on your phone straight away. Because the tickets are non-refundable, confirm your date before you book rather than holding a speculative slot.' },
     ],
   },
   {
@@ -123,7 +124,7 @@ export const attractions: Attraction[] = [
     ],
     faqs: [
       { question: 'How much are 9/11 Memorial and Museum tickets?', answer: '9/11 Memorial and Museum tickets in New York start from around £19 for a timed museum entry. The outdoor memorial and its reflecting pools are free to visit.' },
-      { question: 'What is the best 9/11 Memorial ticket?', answer: 'The top-rated option is NYC: 9/11 Memorial & Museum Timed Ticket with Tour Options, rated 4.8 stars by 33,573 travellers, from £19.' },
+      { question: 'What is the best 9/11 Memorial ticket?', answer: 'The top-rated option is NYC: 9/11 Memorial & Museum Timed Ticket with Tour Options, rated 4.8 stars by 33,819 travellers, from £19.' },
       { question: 'How long should I allow for the 9/11 Museum?', answer: 'Allow at least two to three hours if you want to read the exhibits and absorb the testimony rather than rush. The museum is large and emotionally intense, and a quieter early slot suits it better than a busy midday one.' },
       { question: 'Can I skip the line at the 9/11 Memorial?', answer: 'Yes. The museum runs on timed entry, and a prebooked ticket lets you walk past the on-site ticket queue straight to security. Midday slots sell out first, so book ahead and choose an early time.' },
     ],
@@ -135,7 +136,7 @@ export const attractions: Attraction[] = [
     metaTitle: 'Summit One Vanderbilt Tickets and Tours 2026',
     metaDescription: 'SUMMIT One Vanderbilt tickets in New York from £36. Timed entry to the mirrored 93rd-floor experience beside Grand Central, and how it compares to Edge and Top of the Rock.',
     intro: 'Compare the best Summit One Vanderbilt tickets and guided tours in New York, ranked by verified reviews. Booking online guarantees entry, unlocks skip-the-line access where offered, and gives free cancellation on most options. Every option below links straight to GetYourGuide.',
-    answerCapsule: 'SUMMIT One Vanderbilt tickets start at £36 for timed entry, and the experience holds the highest verified review count of any New York observation deck at 56,915 reviews and a 4.7 rating. Book it if you want an immersive, photo-heavy experience rather than a straightforward viewing platform. If you only want a clean skyline photograph, Top of the Rock from £34 does that job better.',
+    answerCapsule: 'SUMMIT One Vanderbilt tickets start at £36 for timed entry, and the experience holds the highest verified review count of any New York observation deck at 57,616 reviews and a 4.7 rating. Book it if you want an immersive, photo-heavy experience rather than a straightforward viewing platform. If you only want a clean skyline photograph, Top of the Rock from £34 does that job better.',
     tourSlugs: ['nyc-summit-one-vanderbilt-tickets'],
     bodySections: [
       {
@@ -160,7 +161,7 @@ export const attractions: Attraction[] = [
     ],
     faqs: [
       { question: 'How much are SUMMIT One Vanderbilt tickets?', answer: 'SUMMIT One Vanderbilt tickets in New York start from around £36 for timed entry. The ranked list shows current prices and live availability.' },
-      { question: 'What is the best SUMMIT One Vanderbilt ticket?', answer: 'The top-rated option is NYC: SUMMIT One Vanderbilt Tickets, rated 4.7 stars by 56,915 travellers, from £36. That is the highest verified review count of any New York observation deck.' },
+      { question: 'What is the best SUMMIT One Vanderbilt ticket?', answer: 'The top-rated option is NYC: SUMMIT One Vanderbilt Tickets, rated 4.7 stars by 57,616 travellers, from £36. That is the highest verified review count of any New York observation deck.' },
       { question: 'Is SUMMIT One Vanderbilt worth it?', answer: 'It is if you want an immersive, mirrored, photo-heavy experience rather than a plain viewing platform, and it is the most family-friendly of the three big decks. If you want a clean classic skyline photograph, Top of the Rock does that better for a little less.' },
       { question: 'Can I skip the line at SUMMIT One Vanderbilt?', answer: 'Yes. SUMMIT runs on timed entry and draws the longest queues of the three decks, so a prebooked slot matters more here than almost anywhere else. Sunset slots sell out first.' },
     ],
@@ -180,7 +181,7 @@ export const attractions: Attraction[] = [
     ],
     faqs: [
       { question: 'How much are Edge Observation Deck tickets?', answer: 'Edge tickets in New York start from around £34 for timed entry to the Hudson Yards sky deck. The ranked list shows current prices and availability.' },
-      { question: 'What is the best Edge Observation Deck ticket?', answer: 'The top-rated option is NYC: Edge Immersive Observation Deck Ticket, rated 4.6 stars by 22,519 travellers, from £34.' },
+      { question: 'What is the best Edge Observation Deck ticket?', answer: 'The top-rated option is NYC: Edge Immersive Observation Deck Ticket, rated 4.6 stars by 22,661 travellers, from £34.' },
       { question: 'Is Edge better than Top of the Rock?', answer: 'It depends what you want. Edge is the highest outdoor deck and delivers the biggest sense of height, with a glass floor and angled walls. Top of the Rock has the better classic skyline photograph because it faces the Empire State Building and Central Park.' },
       { question: 'Can I skip the line at Edge?', answer: 'Yes. A prebooked timed ticket lets you bypass the on-site ticket queue. Edge moves quickly on a weekday morning but queues badly at weekends and around sunset, so book the slot in advance.' },
     ],

@@ -96,6 +96,17 @@ export default async function TourPage({ params }: { params: Params }) {
     faqSchema(tour.faqs),
   ].filter(Boolean);
 
+  // Real, verified GetYourGuide cancellation terms for this activity.
+  const policy = tour.cancellationPolicy ?? 'free-24h';
+  const cancelShort =
+    policy === 'non-refundable' ? 'Non-refundable'
+      : policy === 'free-3d' ? 'Free cancellation (3 days)'
+        : 'Free cancellation';
+  const cancelLong =
+    policy === 'non-refundable' ? 'Non-refundable, cannot be cancelled'
+      : policy === 'free-3d' ? 'Free cancellation up to 3 days before'
+        : 'Free cancellation on most dates';
+
   return (
     <>
       {schemas.map((schema, i) => (
@@ -108,7 +119,7 @@ export default async function TourPage({ params }: { params: Params }) {
 
       <StickyBookingBar
         label={tour.shortTitle}
-        sublabel={`From £${tour.price} · Free cancellation`}
+        sublabel={`From £${tour.price} · ${cancelShort}`}
         href={tour.affiliateUrl}
         price={`£${tour.price}`}
         ctaLabel="Book Now"
@@ -264,9 +275,9 @@ export default async function TourPage({ params }: { params: Params }) {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
                 </TrackedGYGLink>
-                <p className="mt-2 text-center text-xs font-medium text-success">Free cancellation on most dates</p>
+                <p className={`mt-2 text-center text-xs font-medium ${policy === 'non-refundable' ? 'text-on-surface-2' : 'text-success'}`}>{cancelLong}</p>
                 <ul className="mt-5 space-y-2 text-sm text-on-surface-2">
-                  {['Instant confirmation', 'Free cancellation', 'Mobile ticket', 'Best price guarantee'].map((item) => (
+                  {['Instant confirmation', cancelShort, 'Mobile ticket', 'Best price guarantee'].map((item) => (
                     <li key={item} className="flex items-center gap-2">
                       <svg className="h-4 w-4 text-success shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />

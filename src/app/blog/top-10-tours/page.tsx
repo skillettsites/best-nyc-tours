@@ -142,7 +142,11 @@ export default function Top10Page() {
               <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-gray-600">
                 <span className="font-semibold text-gray-900">From {symbol(tour.currency)}{tour.price}</span>
                 <span>&middot; {tour.duration}</span>
-                <span>&middot; Free cancellation on most options</span>
+                <span>&middot; {tour.cancellationPolicy === 'non-refundable'
+                  ? 'Non-refundable'
+                  : tour.cancellationPolicy === 'free-3d'
+                    ? 'Free cancellation up to 3 days before'
+                    : 'Free cancellation on most options'}</span>
               </div>
 
               <p className="mt-3 text-gray-700 leading-relaxed">{tour.description}</p>

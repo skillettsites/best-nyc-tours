@@ -19,6 +19,15 @@ interface CardTour {
   imageAlt: string;
   affiliateUrl: string;
   destination?: string;
+  cancellationPolicy?: 'free-24h' | 'free-3d' | 'non-refundable';
+}
+
+// Verified per-activity cancellation terms. Never show a free-cancellation badge
+// on a product that is non-refundable.
+function cancelBadge(policy?: string): string | null {
+  if (policy === 'non-refundable') return null;
+  if (policy === 'free-3d') return 'Free cancellation (3 days)';
+  return 'Free cancellation';
 }
 
 function formatReviewCount(count: number): string {
@@ -54,6 +63,7 @@ export default function TourCard({
 }) {
   const prefersReduced = useReducedMotion();
   const currency = getCurrencySymbol(tour.currency);
+  const cancelLabel = cancelBadge(tour.cancellationPolicy);
 
   if (variant === 'wide') {
     return (
@@ -67,9 +77,11 @@ export default function TourCard({
             className="object-cover group-hover:scale-[1.04] transition-transform duration-700"
             sizes="(max-width: 640px) 100vw, 280px"
           />
-          <div className="absolute top-3 right-3 z-10 inline-flex items-center gap-1 rounded-full bg-success px-2.5 py-1 text-[11px] font-semibold text-white">
-            Free cancellation
-          </div>
+          {cancelLabel && (
+            <div className="absolute top-3 right-3 z-10 inline-flex items-center gap-1 rounded-full bg-success px-2.5 py-1 text-[11px] font-semibold text-white">
+              {cancelLabel}
+            </div>
+          )}
         </TrackedGYGLink>
         <div className="flex flex-col p-5 sm:p-6">
           <Link href={`/tours/${tour.slug}`} className="block">
@@ -125,12 +137,14 @@ export default function TourCard({
             className="object-cover group-hover:scale-[1.05] transition-transform duration-700"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
-          <div className="absolute top-3 right-3 z-10 inline-flex items-center gap-1 rounded-full bg-success/95 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold text-white">
-            <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-            </svg>
-            Free cancellation
-          </div>
+          {cancelLabel && (
+            <div className="absolute top-3 right-3 z-10 inline-flex items-center gap-1 rounded-full bg-success/95 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold text-white">
+              <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+              </svg>
+              {cancelLabel}
+            </div>
+          )}
           <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/55 to-transparent p-4 text-white text-xs font-medium">
             {tour.duration}
           </div>

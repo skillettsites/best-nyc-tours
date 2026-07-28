@@ -46,6 +46,14 @@ export default async function GuidePage({ params }: { params: Params }) {
     .map((s) => getTourBySlug(s))
     .filter((t): t is NonNullable<typeof t> => t !== undefined);
 
+  // The featured CTA points at one specific activity, so mirror that activity's real terms.
+  const featured = relatedTours[0];
+  const featuredCancel = featured?.cancellationPolicy === 'non-refundable'
+    ? 'Non-refundable'
+    : featured?.cancellationPolicy === 'free-3d'
+      ? 'Free cancellation (3 days)'
+      : 'Free cancellation';
+
   return (
     <>
       {[
@@ -117,7 +125,7 @@ export default async function GuidePage({ params }: { params: Params }) {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg>
                   </a>
-                  <span className="text-xs text-green-700 font-medium">Free cancellation &bull; Instant confirmation</span>
+                  <span className="text-xs text-green-700 font-medium">{featuredCancel} &bull; Instant confirmation</span>
                 </div>
               </div>
             </div>
@@ -248,7 +256,7 @@ export default async function GuidePage({ params }: { params: Params }) {
       {relatedTours.length > 0 && (
         <StickyBookingBar
           label={relatedTours[0].shortTitle}
-          sublabel="Free cancellation · Instant confirmation"
+          sublabel={`${featuredCancel} · Instant confirmation`}
           href={relatedTours[0].affiliateUrl}
           price={`£${relatedTours[0].price}`}
           ctaLabel="Book Now"

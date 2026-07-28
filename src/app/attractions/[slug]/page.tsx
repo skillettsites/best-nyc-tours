@@ -38,6 +38,9 @@ export default async function AttractionPage({ params }: { params: Params }) {
   const tours = a.tourSlugs.map((s) => getTourBySlug(s)).filter((t): t is NonNullable<typeof t> => Boolean(t));
   const top = tours[0];
   const fromPrice = Math.min(...tours.map((t) => t.price).filter(Boolean));
+  // Only promise free cancellation when at least one option on this page actually offers it.
+  const anyFreeCancel = tours.some((t) => t.cancellationPolicy !== 'non-refundable');
+  const cancelNote = anyFreeCancel ? 'free cancellation on most' : 'non-refundable tickets';
 
   return (
     <>
@@ -76,7 +79,7 @@ export default async function AttractionPage({ params }: { params: Params }) {
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
               </TrackedGYGLink>
             )}
-            <span className="text-sm text-gray-500">{tours.length} option{tours.length === 1 ? '' : 's'} &middot; free cancellation on most</span>
+            <span className="text-sm text-gray-500">{tours.length} option{tours.length === 1 ? '' : 's'} &middot; {cancelNote}</span>
           </div>
         </div>
 
@@ -125,7 +128,7 @@ export default async function AttractionPage({ params }: { params: Params }) {
 
         <div className="mt-12 rounded-xl bg-gradient-to-r from-green-700 to-emerald-800 p-5 sm:p-6 text-center text-white">
           <p className="font-bold text-lg mb-1">Ready to book {a.name}?</p>
-          <p className="text-sm text-green-100 mb-4">Compare all {a.name} options and book instantly through GetYourGuide. Free cancellation on most.</p>
+          <p className="text-sm text-green-100 mb-4">Compare all {a.name} options and book instantly through GetYourGuide. {anyFreeCancel ? 'Free cancellation on most.' : 'Tickets are non-refundable, so check your date first.'}</p>
           {top && (
             <TrackedGYGLink href={top.affiliateUrl} tourName={a.name} section="attraction-footer-cta" className="inline-block bg-white text-green-700 font-bold text-sm px-6 py-2.5 rounded-lg hover:bg-green-50 transition-colors">
               Check availability &rarr;
