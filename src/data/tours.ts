@@ -75,7 +75,7 @@ export const tours: Tour[] = [
     metaDescription: 'Book NYC: Edge Immersive Observation Deck Ticket in New York. Instant confirmation, free cancellation on most options. Rated 4.6 by 22,519 travellers.',
     description: 'Experience the Edge Observation Deck as an immersive journey into the sky, combining interactive indoor environments with the highest outdoor sky deck in New York City and breathtaking 360° skyline views',
     excerpt: 'Experience the Edge Observation Deck as an immersive journey into the sky, combining interactive indoor environments wit',
-    price: 36,
+    price: 34,
     currency: 'GBP',
     duration: 'Varies',
     rating: 4.6,
