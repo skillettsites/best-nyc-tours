@@ -4,6 +4,8 @@ import { guides } from '@/data/guides';
 import { attractions } from '@/data/attractions';
 import { categories } from '@/data/categories';
 import { blogPosts } from '@/data/blog-posts';
+import { monthPages } from '@/data/nyc-months';
+import { HUB_PATH } from '@/lib/season';
 
 export const dynamic = 'force-static';
 
@@ -84,6 +86,28 @@ export function GET(): Response {
     '',
     ...guides.map((g) => `- [${g.title}](${SITE_URL}/guides/${g.slug}): ${g.excerpt}`),
     `- [The 10 Best ${SITE_CITY} Tours for ${new Date(CONTENT_DATE).getFullYear()}](${SITE_URL}/blog/top-10-tours): the top 10 ${SITE_CITY} tours ranked #1 to #10 by real rating and verified reviews, each with a direct GetYourGuide booking link.`,
+    '',
+
+    `## Seasonal Planning: ${SITE_CITY} Month by Month`,
+    'Evergreen month guides built on NOAA 1991-2020 climate normals for Central Park (temperature, ' +
+      'precipitation and snowfall), computed daylight and sunset times for the 15th of each month, dated ' +
+      'events, and the operator season bands most guides miss. No year appears in any of these URLs. ' +
+      'Key verified facts: the Circle Line winter season runs 5 January to 5 March and the flagship ' +
+      'full-island cruise has ZERO departures in that window, while the landmarks cruise halves from four ' +
+      'sailings to two and the harbour lights cruise gains a 17:00 sailing; the Statue of Liberty ferry and ' +
+      'islands close on only two days a year, Thanksgiving and 25 December; the Ellis Island Hard Hat Tour ' +
+      'runs six departures a day March to December but only four in January and February; the Bronx Zoo and ' +
+      'Central Park Zoo move to 10:00-16:30 from 1 November with the Children\'s Zoo, Monorail, Butterfly ' +
+      'Garden, Zoo Shuttle and Budgie Landing all closed; Central Park rowing boats are walk-up only and can ' +
+      'never be booked in advance; Edge is the only New York observation deck that publishes a weather ' +
+      'policy; October is the most expensive month at 89.4% hotel occupancy, not December; and Easter Sunday ' +
+      '2027 falls on 28 March, so the Fifth Avenue Easter Parade is a March event, not an April one.',
+    '',
+    `- [Best time to visit ${SITE_CITY}, month by month](${SITE_URL}${HUB_PATH}): all twelve months compared on ` +
+      'temperature, precipitation, snowfall, daylight and sunset, with a verdict for each.',
+    ...monthPages.map(
+      (m) => `- [${SITE_CITY} in ${m.month}](${SITE_URL}/${m.slug}): ${m.metaDescription}`
+    ),
     '',
 
     '## Decision Guides (Is it worth it?)',

@@ -4,6 +4,8 @@ import { categories } from '@/data/categories';
 import { guides } from '@/data/guides';
 import { attractions } from '@/data/attractions';
 import { blogPosts } from '@/data/blog-posts';
+import { monthPages } from '@/data/nyc-months';
+import { HUB_PATH, SEASON_UPDATED } from '@/lib/season';
 import { SITE_URL, CONTENT_DATE } from '@/lib/constants';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -60,5 +62,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...tourPages, ...attractionPages, ...categoryPages, ...guidePages, ...blogPostPages];
+  // Seasonal hub and the ten evergreen month guides. No year appears in any of
+  // these URLs; the year is rendered in the title tag and the events heading only.
+  const seasonLastModified = new Date(SEASON_UPDATED);
+  const seasonPages: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}${HUB_PATH}`, lastModified: seasonLastModified, changeFrequency: 'monthly', priority: 0.9 },
+    ...monthPages.map((m) => ({
+      url: `${SITE_URL}/${m.slug}`,
+      lastModified: seasonLastModified,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    })),
+  ];
+
+  return [...staticPages, ...seasonPages, ...tourPages, ...attractionPages, ...categoryPages, ...guidePages, ...blogPostPages];
 }
