@@ -1,3 +1,4 @@
+import DisplayCopy, { DisplayCopyHtml } from '@/components/DisplayCopy';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -97,7 +98,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
         {/* Header */}
         <header className="mb-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">{post.title}</h1>
-          <p className="text-lg text-gray-600 leading-relaxed mb-4">{post.excerpt}</p>
+          <DisplayCopy as="p" className="text-lg text-gray-600 leading-relaxed mb-4" text={post.excerpt} />
           <div className="flex items-center gap-4 text-sm text-gray-500">
             <span>Published: {new Date(post.publishedDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
             {post.updatedDate !== post.publishedDate && (
@@ -110,7 +111,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
         </header>
 
         {/* Blog content */}
-        <div
+        <DisplayCopyHtml
           className="blog-content prose prose-gray prose-lg max-w-none
             prose-headings:text-gray-900 prose-headings:font-bold
             prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
@@ -120,7 +121,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
             prose-li:text-gray-700
             prose-img:rounded-xl prose-img:shadow-sm
             prose-strong:text-gray-900"
-          dangerouslySetInnerHTML={{ __html: post.content }}
+          html={post.content}
         />
 
         {/* FAQ */}
